@@ -1,8 +1,8 @@
-# Project Title: A RAG-based Document Question & Answering System
+# InsightBridge: voice-to-report RAG for radiology
 
-This project implements a system that allows users to ask questions about their documents (PDFs) using natural language, including voice input. The system leverages a Retrieval Augmented Generation (RAG) architecture to generate answers using a Large Language Model (LLM).
+InsightBridge turns a radiologist's spoken dictation into a structured report. Whisper transcribes the audio, a domain-specific RAG (ChromaDB with configurable embeddings such as bge-m3) retrieves reference material, and Llama 3.1 via Ollama drafts a report in Turkish with findings and impression sections. It is my B.Sc. graduation thesis at Gebze Technical University ([thesis PDF](InsightBridge_TugayTalhaIcen.pdf)). The same pipeline also answers spoken or typed questions about PDF documents through a Gradio interface.
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Tugaytalha/Voice-To-Report-Domain-Spesific-Rag-Solition)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Tugaytalha/InsightBridge)
 
 
 ## Key Features
@@ -40,8 +40,8 @@ This project implements a system that allows users to ask questions about their 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Tugaytalha/InsightBridge.git
+    cd InsightBridge
     ```
 
 2.  **Create a Python virtual environment (recommended):**
